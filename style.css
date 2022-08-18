@@ -1,0 +1,284 @@
+@font-face {
+  font-family: 'SDKukdetopokki-Lt';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/SDKukdetopokki-aLt00.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ChosunGu';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MYYeongnamnu';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/MYYeongnamnu.woff2')
+    format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Chosunilbo_myungjo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ChosunCentennial';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ChosunCentennial.woff2')
+    format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Global */
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-black: black;
+  --color-lightblue: #5adeff;
+  --color-blue: #5a9aff;
+  --color-darkblue: #1c31ad;
+  --color-borderlightblue: #7ae7fd;
+  --color-borderblue: #5b81c0;
+  --color-grey: #4b4b4b;
+
+  --color-red: #ff3f3f;
+
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font wegit */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+}
+
+/*Font*/
+
+h1 {
+  font-family: 'SDKukdetopokki-Lt';
+  font-size: var(--font-large);
+}
+
+h2 {
+  font-family: 'SDKukdetopokki-Lt';
+  font-size: var(--font-medium);
+}
+
+h3 {
+  font-family: 'MYYeongnamnu';
+  font-size: var(--font-regular);
+}
+
+p {
+  font-family: 'ChosunGu';
+  font-size: var(--font-small);
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  z-index: -1;
+  position: relative;
+  background-size: cover;
+  margin: 0;
+
+  background: url(img/background\ image.png);
+  background-color: #a0ecff;
+  background-blend-mode: multiply;
+
+  /* font-family:  */
+}
+
+.menubar__fix {
+  position: fixed;
+  background: url(img/menubar.png);
+  width: 100%;
+  height: 135px;
+  z-index: 1;
+}
+
+.menu {
+  height: 200px;
+}
+
+.menubar__menu {
+  z-index: 3;
+  position: relative;
+  bottom: 540px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background: linear-gradient(#1c31ad, transparent);
+}
+
+.menubar__menu__item {
+  text-align: center;
+  width: 180px;
+  height: 80px;
+  font-family: 'SDKukdetopokki-Lt';
+  font-size: 20px;
+  color: var(--color-white);
+  line-height: 100px;
+}
+
+.menubar__norige {
+  z-index: 2;
+  position: relative;
+  bottom: 100px;
+  display: flex;
+  justify-content: center;
+  margin-left: 500px;
+}
+
+.ilju {
+  background-color: var(--color-white);
+  padding: 30px 40px 60px;
+  width: 350px;
+  margin: auto;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.ilju__first > h1 {
+  font-family: 'SDKukdetopokki-Lt';
+  font-size: 30px;
+  margin-top: 50px;
+  line-height: 40px;
+}
+
+.ilju__first > p {
+  font-family: 'ChosunGu';
+  font-size: 13px;
+  margin: 50px 10% 50px;
+  line-height: 30px;
+}
+
+.ilju__second > h1 {
+  font-family: 'SDKukdetopokki-Lt';
+  font-size: 30px;
+  margin: 30px 0px 50px;
+}
+
+.ilju__second > h3 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: var(--color-borderblue);
+  font-family: 'MYYeongnamnu';
+}
+
+select {
+  width: 150px;
+  padding: 10px;
+  font-size: 15px;
+}
+.select__box {
+  margin: auto;
+  position: relative;
+  width: 150px;
+  height: 35px;
+  border-radius: 4px;
+  border: 2px solid var(--color-borderblue);
+  margin-bottom: 30px;
+}
+
+.select {
+  width: inherit;
+  height: inherit;
+  background: transparent;
+  border: 0 none;
+  outline: 0 none;
+  padding: 0 5px;
+  position: relative;
+  z-index: 3;
+  color: var(--color-grey);
+  font-family: 'ChosunGu';
+  font-size: 13px;
+}
+
+.ilju__birthFind {
+  margin-top: 100px;
+}
+
+.result > img {
+  width: 200px;
+  margin: 20px 0px;
+}
+
+.result__title {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  margin-left: 30%;
+}
+
+.result__title > p {
+  font-family: 'ChosunCentennial';
+  margin-bottom: 3px;
+  font-size: var(--font-small);
+}
+
+.result__title > h2 {
+  font-family: 'Chosunilbo_myungjo';
+  letter-spacing: 13px;
+  margin-bottom: 35px;
+  font-size: 30px;
+}
+
+.result > h3 {
+  font-family: 'MYYeongnamnu';
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.result > p {
+  font-family: 'ChosunGu';
+  line-height: 23px;
+  font-size: 13px;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.red {
+  color: var(--color-red);
+}
+
+.hide {
+  display: none;
+}
+
+button {
+  width: 200px;
+  height: 60px;
+  font-size: 30px;
+  background: linear-gradient(#5adeff, #5a9aff);
+  border: 3px solid var(--color-white);
+  border-radius: 20px;
+  box-shadow: 5px 5px var(--color-darkblue);
+  color: var(--color-white);
+  font-family: 'SDKukdetopokki-Lt';
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .menubar__menu__item {
+    width: 150px;
+  }
+  .ilju {
+    width: 45%;
+  }
+}
